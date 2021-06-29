@@ -16,7 +16,7 @@
 		<title>j45's website</title>
 
 		<style type="text/css">
-			.nav {
+			#nav {
 				border: 5px outset purple;
 				background-color: white;
 				width: 30%;
@@ -39,14 +39,20 @@
 				margin: 0;
 				padding: 0;
 			}
-			.portfolio {
+			#portfolio {
+				border: 5px outset purple;
 				display: flex;
+				margin: 1% 5% 0;
+				justify-content: center;
+			}
+			white {
+				color: white;
 			}
 		</style>
 	</head>
 	<body>
 		<center>
-			<div class="nav" id="nav">
+			<div id="nav">
 				<img src="https://minetest-j45.github.io/images/j45withname.png" width="18%" height="18%">
 				<button onclick="location = '#nav';">Home</button>
 				<button onclick="location = '#portfolio';">Portfolio</button>
@@ -56,11 +62,12 @@
 			<br>
 			<verybigtext>Hey, I'm j45</verybigtext>
 			<br><br>
-			<bigtext>Hi, I'm j45(he/him). I am 15 years old and I live in England, in my free time, I like to program, play video games or hang out with friends.</bigtext>
-			<br>
-			<ul class="undo-ul media-links"> <li> <a href="https://j1233.minetest.land/blog/" title="Blog" rel="me"> <img alt="Blog" src="/images/blog.png" /> </a> </li> <li> <a href="https://github.com/Minetest-j45/" title="GitHub" rel="me"> <img alt="GitHub" src="/images/github.png" /> </a> </li> <li> <a href="https://twitter.com/j4547497813/" title="Twitter" rel="me"> <img alt="Twitter" src="/images/twitter.png" /> </a> </li> </ul>
+			<bigtext>Hi, I'm j45(he/him). I am 15 years old and I live in England; in my free time, I like to program, play video games or hang out with friends.</bigtext>
+			<br><br>
+			<ul class="undo-ul media-links"> <li> <a href="https://j1233.minetest.land/blog/" title="Blog" rel="me"> <img alt="Blog" src="https://j1233.minetest.land/images/blog.png" /> </a> </li> <li> <a href="https://github.com/Minetest-j45/" title="GitHub" rel="me"> <img alt="GitHub" src="https://j1233.minetest.land/images/github.png" /> </a> </li> <li> <a href="https://twitter.com/j4547497813/" title="Twitter" rel="me"> <img alt="Twitter" src="https://j1233.minetest.land/images/twitter.png" /> </a> </li> </ul>
+			<div id="portfolio">
+				<verybigtext>My portfolio<verybigtext>
+			</div>
 		</center>
-		<div class="portfolio" id="portofolio">
-		</div>
 	</body>
 </html>
