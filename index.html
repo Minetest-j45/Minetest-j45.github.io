@@ -35,6 +35,11 @@
 			}
 			.media-links img {
 				width: 45px;
+				transition: transform .2s;
+			}
+			.media-links img:hover {
+				transform: scale(1.5);
+				opacity:0.7;
 			}
 			.undo-ul, .undo-ul > li {
 				display: inline-block;
@@ -66,17 +71,22 @@
    				50% { transform: rotate(10.0deg) }
    				60% { transform: rotate( 0.0deg) }
   				100% { transform: rotate( 0.0deg) }
-}
+			}
+			#footer {
+ 				padding: 1% 0;
+				color: #f0f9ff;
+				background-color: #282d32;
+			}
 		</style>
 	</head>
 	<body>
 		<center>
 			<div id="nav">
 				<img src="https://minetest-j45.github.io/images/j45withname.png" width="18%" height="18%">
-				<button onclick="location = '#nav';">Home</button>
-				<button onclick="location = '#portfolio';">Portfolio</button>
-				<button onclick="location = '/discord/';">Discord</button>
-				<button onclick="location = '/contact/';">Contact</button>
+				<button onclick="location = 'https://j1233.minetest.land/#nav';">Home</button>
+				<button onclick="location = 'https://j1233.minetest.land/#portfolio';">Portfolio</button>
+				<button onclick="location = 'https://j1233.minetest.land/discord/';">Discord</button>
+				<button onclick="location = 'https://j1233.minetest.land/contact/';">Contact</button>
 			</div>
 			<br>
 			<verybigtext>Hey, I'm j45 <span class="wave">👋</span></verybigtext>
@@ -87,8 +97,11 @@
 			<div id="portfolio">
 				<verybigtext>My portfolio</verybigtext>
 				<div class="realportfolio">
-				<div>
+				</div>
 			</div>
+			<!--<div id="footer">
+				<ul class="undo-ul media-links"> <li> <a href="https://j1233.minetest.land/blog/" title="Blog" rel="me"> <img alt="Blog" src="https://j1233.minetest.land/images/blog.png" /> </a> </li> <li> <a href="https://github.com/Minetest-j45/" title="GitHub" rel="me"> <img alt="GitHub" src="https://j1233.minetest.land/images/github.png" /> </a> </li> <li> <a href="https://twitter.com/j4547497813/" title="Twitter" rel="me"> <img alt="Twitter" src="https://j1233.minetest.land/images/twitter.png" /> </a> </li> </ul>
+			</div>-->
 		</center>
 	</body>
 </html>
