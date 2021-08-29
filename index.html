@@ -51,10 +51,6 @@
 				border: 5px outset purple;
 				margin: 1% 5% 0;
 			}
-			.realportfolio{
-				display: flex;
-				justify-content: center;
-			}
 			.wave:hover {
   				animation-name: wave-animation;
   				animation-duration: 2.5s;
@@ -72,10 +68,73 @@
    				60% { transform: rotate( 0.0deg) }
   				100% { transform: rotate( 0.0deg) }
 			}
-			#footer {
- 				padding: 1% 0;
-				color: #f0f9ff;
-				background-color: #282d32;
+			.portfolio-icons{
+                		width:100%;
+                		margin:0 -10px;
+                		padding:0;
+                		display:flex;
+                		flex-wrap:wrap;
+                		justify-content:flex-start;
+           	 	}
+            		.portfolio-icons li{
+				margin:10px;
+				padding:0;
+				flex:0 1 calc(25% - 10px*2);
+				min-width:100px;
+			}
+            		.portfolio-icons li a{
+				display:block;
+				position:relative;
+				margin:0;
+				border-radius:3px;
+				cursor:pointer;
+				background:#333;
+				overflow:hidden;
+				background-size:cover;
+			}
+            		.portfolio-icons li a:before{
+				content:'';
+				float:left;
+				padding-top:100%;
+			}
+			.portfolio-icons li a .info{
+				transition:all 150ms ease 0s;
+				display:block;
+				position:absolute;
+				top:calc(100% - 2.5em);
+				right:0;
+				bottom:0;
+				left:0;
+				margin:0;
+				padding:0;
+				overflow:hidden;
+				background:rgba(0,0,0,0.6);
+				font-size:10pt;
+				font-family: "Lucida Console", "Courier New", monospace;
+				color:#fff;
+				text-decoration:none;
+			}
+			.portfolio-icons li a .info span{
+				display:block;
+				margin:0;
+				padding:0.5em;
+				text-align:center;
+				font-weight:bold;
+			}
+			.portfolio-icons li a .info p{
+				margin:0;
+				padding:1em;
+			}
+			.portfolio-icons li a:hover{
+				box-shadow:0 0 20px #000;
+				z-index:2;
+			}
+			.portfolio-icons li a:hover .info{
+				top:70%;
+				background:rgba(0,0,0,0.8);
+			}
+			.portfolio-icons li a:hover .info p{
+				display:block;
 			}
 		</style>
 	</head>
@@ -96,12 +155,11 @@
 			<ul class="undo-ul media-links"> <li> <a href="https://j1233.minetest.land/blog/" title="Blog" rel="me"> <img alt="Blog" src="https://j1233.minetest.land/images/blog.png" /> </a> </li> <li> <a href="https://github.com/Minetest-j45/" title="GitHub" rel="me"> <img alt="GitHub" src="https://j1233.minetest.land/images/github.png" /> </a> </li> <li> <a href="https://twitter.com/j4547497813/" title="Twitter" rel="me"> <img alt="Twitter" src="https://j1233.minetest.land/images/twitter.png" /> </a> </li> </ul>
 			<div id="portfolio">
 				<verybigtext>My portfolio</verybigtext>
-				<div class="realportfolio">
-				</div>
+				<ul class="undo-ul portfolio-icons">
+					<li> <a href="https://github.com/Minetest-j45/discord-irc_relay" style="background-image: url('https://j1233.minetest.land/images/portfolio/irc-discord.png'); width: 320px; height: 320px;"> <div class="info"> <span>IRC<->Discord Relay</span> <p> A customisable chat relay that relays between an IRC channel and a Discord channel.</p> </div> </a> </li>
+					<li> <a href="https://github.com/Minetest-j45/mute" style="background-image: url('https://j1233.minetest.land/images/portfolio/mute.png'); width: 320px; height: 320px;"> <div class="info"> <span>Mute mod for Minetest</span> <p> A mod for Minetest that adds commands such as `/mute $playername`, `/unmute $playername` and `/mutesec $playername $seconds`.</p> </div> </a> </li>
+				</ul>
 			</div>
-			<!--<div id="footer">
-				<ul class="undo-ul media-links"> <li> <a href="https://j1233.minetest.land/blog/" title="Blog" rel="me"> <img alt="Blog" src="https://j1233.minetest.land/images/blog.png" /> </a> </li> <li> <a href="https://github.com/Minetest-j45/" title="GitHub" rel="me"> <img alt="GitHub" src="https://j1233.minetest.land/images/github.png" /> </a> </li> <li> <a href="https://twitter.com/j4547497813/" title="Twitter" rel="me"> <img alt="Twitter" src="https://j1233.minetest.land/images/twitter.png" /> </a> </li> </ul>
-			</div>-->
 		</center>
 	</body>
 </html>
