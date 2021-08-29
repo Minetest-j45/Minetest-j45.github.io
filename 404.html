@@ -29,11 +29,17 @@
   				animation-iteration-count: infinite;
 			}
 			@keyframes search-animation {
-				0% {top: 0%; left: 50%;}
-				25% {top: 5%; left: 55%;}
-				50% {top: 10%; left: 50%;}
-				75% {top: 5%; left: 45%;}
-				100% {top: 0%; left: 50%;}
+				0%{
+					transform:rotate(0deg)
+					translate(-75px)
+					rotate(0deg);
+  
+				}
+				100%{
+					transform:rotate(360deg)
+					translate(-75px)
+					rotate(-360deg);
+				}
 			}
 			.myButton {
 				background-color: #005b71;
@@ -51,7 +57,9 @@
 	</head>
 	<body>
 		<center>
-			<verybigtext><span class="search">🔍</span></verybigtext><br><br><br><br><br><br>
+			<br><br><br><br><br><br>
+			<verybigtext><span class="search">🔍</span></verybigtext>
+			<br><br><br><br><br><br>
 			<bigtext>You are lost<br><br>
 			<a href="https://j1233.minetest.land/" class="myButton">Go home</a></bigtext>
 		</center>
