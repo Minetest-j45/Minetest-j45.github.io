@@ -1,16 +1,16 @@
 GetBlogs();
 
-async function GetBlogs(){
+async function GetBlogs() {
 	const Blogs = await fetch('https://j1233.minetest.land/blog/blogs.csv');
 	const data = await Blogs.text();
 
-	const myTable=data.split('\n').slice(1);
+	const myTable = data.split('\n').slice(1);
 
 	for (let iRow = myTable.length-1; iRow >= 0; iRow--) {
 
 		const row = myTable[iRow];
 
-		const columns=row.split('|');
+		const columns = row.split('|');
 
 		createPostTitle(
 			columns[0],
@@ -22,24 +22,44 @@ async function GetBlogs(){
 
 }
 
-function createPostTitle(Number,Title,Date,Text){
+function createPostTitle(Number,Title,Date,Text) {
 
 	//Blog Block
 	var newDiv=document.createElement('Div');
-	newDiv.className='blog';
-	newDiv.id='Post'+Number;
-	//document.body.appendChild(newDiv);
+	newDiv.className = 'blog';
+	newDiv.id = 'Post'+Number;
 	document.getElementsByClassName('blogs').item(0).appendChild(newDiv);
 
 
 	//Blog title
-	var a = document.createElement('a');
-	var linkText = document.createTextNode(Title);
-	a.appendChild(linkText);
-	a.title = Title;
-	a.href = "https://j1233.minetest.land/blog";
-	newDiv.appendChild(a);
+	var btn=document.createElement("button");
+	btn.innerHTML = Title;
+	btn.onclick = function () {
+		makePageSpecificBlog(Number,Title,Date,Text);
+	};
+	newDiv.appendChild(btn);
 
 	var newLine = document.createElement('br');
  	newDiv.appendChild(newLine);
+	newDiv.appendChild(newLine);
+}
+
+function makePageSpecificBlog(Number,Title,Date,Text) {
+	//remove all current things
+	document.getElementsByClassName('blogs').item(0).replaceChildren();
+	
+	
+	var nDiv = document.createElement('Div');
+	document.getElementsByClassName('blogs').item(0).appendChild(nDiv);
+	//title big
+	var big = document.createElement("bigtext");
+	big.innerHTML = Title;
+	nDiv.appendChild(big);
+	//date small
+	var text = document.createTextNode(' - '+Date);
+	//new line
+	var newLine = document.createElement('br');
+ 	nDiv.appendChild(newLine);
+	//text
+	var newText = document.createTextNode(Text);
 }
