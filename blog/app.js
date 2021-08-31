@@ -15,14 +15,13 @@ async function GetBlogs() {
 		createPostTitle(
 			columns[0],
 			columns[1],
-			columns[2],
-			columns[3]
+			columns[2]
 		);
 	}
 
 }
 
-function createPostTitle(Number,Title,Date,Text) {
+function createPostTitle(Title,Date,Text) {
 
 	//Blog Block
 	var newDiv=document.createElement('Div');
@@ -37,12 +36,12 @@ function createPostTitle(Number,Title,Date,Text) {
 	var btn = document.createElement("myButton");
 	btn.innerHTML = Title;
 	btn.onclick = function () {
-		makePageSpecificBlog(Number,Title,Date,Text);
+		makePageSpecificBlog(Title,Date,Text);
 	};
 	newDiv.appendChild(btn);
 }
 
-function makePageSpecificBlog(Number,Title,Date,Text) {
+function makePageSpecificBlog(Title,Date,Text) {
 	//remove all current things
 	document.getElementsByClassName('blogs').item(0).replaceChildren();
 	
