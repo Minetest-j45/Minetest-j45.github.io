@@ -43,8 +43,6 @@ function createPostTitle(Number,Title,Date,Text){
 	a.title = Title;
 	a.href = "https://j1233.minetest.land/blog";
 	newDiv.appendChild(a);
-	var newContent=document.createTextNode('<a href="https://j1233.minetest.land/blog">'+Title+'</a> - '+Date);
-	newDiv.appendChild(newContent);
 
 	var newLine=document.createElement('br');
  	newDiv.appendChild(newLine);
