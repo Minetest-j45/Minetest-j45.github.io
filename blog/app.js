@@ -45,14 +45,21 @@ function createPostTitle(Number,Title,Date,Text) {
 }
 
 function makePageSpecificBlog(Number,Title,Date,Text) {
+	//remove all current things
 	document.getElementsByClassName('blogs').item(0).replaceChildren();
+	
+	
 	var nDiv = document.createElement('Div');
 	document.getElementsByClassName('blogs').item(0).appendChild(nDiv);
+	//title big
 	var big = document.createElement("bigtext");
 	big.innerHTML = Title;
 	nDiv.appendChild(big);
+	//date small
 	var text = document.createTextNode(' - '+Date);
+	//new line
 	var newLine = document.createElement('br');
  	nDiv.appendChild(newLine);
+	//text
 	var newText = document.createTextNode(Text);
 }
