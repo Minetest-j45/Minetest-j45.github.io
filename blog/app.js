@@ -1,5 +1,4 @@
 import * as fs from 'fs/promises';
-const fs = require('fs/promises');
 
 GetBlogs();
 
