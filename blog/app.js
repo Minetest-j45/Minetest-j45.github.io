@@ -3,15 +3,14 @@
 GetBlogs();
 
 async function GetBlogs(){
-	const Blogs=await fetch('https://j1233.minetest.land/blog/blogs.csv');
-	const data=await Blogs.text();
-	console.log(data);
+	const Blogs = await fetch('https://j1233.minetest.land/blog/blogs.csv');
+	const data = await Blogs.text();
 
-	/*let stuff = `test`
+//	let stuff = `test`
 
-	fs.writeFile('./posts/test.txt', stuff, (err) => { 
-		if (err) throw err; 
-	});*/
+//	fs.writeFile('./posts/test.txt', stuff, (err) => { 
+//		if (err) throw err; 
+//	});
 
 	const myTable=data.split('\n').slice(1);
 
@@ -28,18 +27,17 @@ async function GetBlogs(){
 			columns[3]
 		);
 		
-		/*fs.readFile('./posts/'+columns[0]+'.txt', 'utf8' , (err, data) => {
-			if (err) {
-				//no post page for that blog yet
-				createPostPage(
-					columns[0],
-					columns[1],
-					columns[2],
-					columns[3]
-				);
-			}
-		});*/
-
+//		fs.readFile('./posts/'+columns[0]+'.txt', 'utf8' , (err, data) => {
+//			if (err) {
+//				//no post page for that blog yet
+//				createPostPage(
+//					columns[0],
+//					columns[1],
+//					columns[2],
+//					columns[3]
+//				);
+//			}
+//		});
 	}
 
 }
@@ -62,15 +60,15 @@ function createPostTitle(Number,Title,Date,Text){
 	a.href = "https://j1233.minetest.land/blog";
 	newDiv.appendChild(a);
 
-	var newLine=document.createElement('br');
+	var newLine = document.createElement('br');
  	newDiv.appendChild(newLine);
 }
 
-/*function createPostTitle(Number,Title,Date,Text){
-
-	let data = `test`
-
-	fs.writeFile('./posts/'+Number+'.txt', data, (err) => { 
-		if (err) throw err; 
-	});
-}*/
+//function createPostTitle(Number,Title,Date,Text){
+//
+//	let data = `test`
+//
+//	fs.writeFile('./posts/'+Number+'.txt', data, (err) => { 
+//		if (err) throw err; 
+//	});
+//}
