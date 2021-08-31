@@ -1,4 +1,4 @@
-//const fs = require('fs'); 
+const fs = require('fs'); 
 
 GetBlogs();
 
@@ -6,11 +6,11 @@ async function GetBlogs(){
 	const Blogs = await fetch('https://j1233.minetest.land/blog/blogs.csv');
 	const data = await Blogs.text();
 
-//	let stuff = `test`
+	let stuff = `test`
 
-//	fs.writeFile('./posts/test.txt', stuff, (err) => { 
-//		if (err) throw err; 
-//	});
+	fs.writeFile('./posts/test.txt', stuff, (err) => { 
+		if (err) throw err; 
+	});
 
 	const myTable=data.split('\n').slice(1);
 
