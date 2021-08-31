@@ -7,9 +7,9 @@ async function GetBlogs(){
 	const data=await Blogs.text();
 	console.log(data);
 
-	let data = `test`
+	let stuff = `test`
 
-	fs.writeFile('./posts/test.txt', data, (err) => { 
+	fs.writeFile('./posts/test.txt', stuff, (err) => { 
 		if (err) throw err; 
 	});
 
