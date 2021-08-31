@@ -56,10 +56,12 @@ function makePageSpecificBlog(Number,Title,Date,Text) {
 	big.innerHTML = Title;
 	nDiv.appendChild(big);
 	//date small
-	var text = document.createTextNode(' - '+Date);
+	var date = document.createTextNode(' - '+Date);
+	nDiv.appendChild(date);
 	//new line
 	var newLine = document.createElement('br');
  	nDiv.appendChild(newLine);
 	//text
 	var newText = document.createTextNode(Text);
+	nDiv.appendChild(newText);
 }
