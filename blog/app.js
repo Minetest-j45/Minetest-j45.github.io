@@ -29,7 +29,9 @@ function createPostTitle(Number,Title,Date,Text) {
 	newDiv.className = 'blog';
 	newDiv.id = 'Post'+Number;
 	document.getElementsByClassName('blogs').item(0).appendChild(newDiv);
-
+	
+	var newLine = document.createElement('br');
+ 	newDiv.appendChild(newLine);
 
 	//Blog title
 	var btn = document.createElement("myButton");
@@ -39,7 +41,7 @@ function createPostTitle(Number,Title,Date,Text) {
 	};
 	newDiv.appendChild(btn);
 
-	var newLine = document.createElement('br');
+
  	newDiv.appendChild(newLine);
 	newDiv.appendChild(newLine);
 }
@@ -55,6 +57,7 @@ function makePageSpecificBlog(Number,Title,Date,Text) {
 	//new line
 	var newLine = document.createElement('br');
  	nDiv.appendChild(newLine);
+	nDiv.appendChild(newLine);
 
 	//title big
 	var big = document.createElement("bigtext");
@@ -71,4 +74,6 @@ function makePageSpecificBlog(Number,Title,Date,Text) {
 	//text
 	var newText = document.createTextNode(Text);
 	nDiv.appendChild(newText);
+	
+ 	nDiv.appendChild(newLine);
 }
