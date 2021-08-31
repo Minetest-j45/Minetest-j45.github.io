@@ -41,7 +41,7 @@ function createPostTitle(Number,Title,Date,Text) {
 	};
 	newDiv.appendChild(btn);
 
-
+	var newLine = document.createElement('br');
  	newDiv.appendChild(newLine);
 	newDiv.appendChild(newLine);
 }
@@ -68,12 +68,14 @@ function makePageSpecificBlog(Number,Title,Date,Text) {
 	var date = document.createTextNode(' - '+Date);
 	nDiv.appendChild(date);
 
+	var newLine = document.createElement('br');
  	nDiv.appendChild(newLine);
 	nDiv.appendChild(newLine);
 
 	//text
 	var newText = document.createTextNode(Text);
 	nDiv.appendChild(newText);
-	
+
+	var newLine = document.createElement('br');
  	nDiv.appendChild(newLine);
 }
