@@ -28,7 +28,7 @@ async function GetBlogs(){
 
 function createPostTitle(Number,Title,Date,Text){
 
-	//Question Block
+	//Blog Block
 	var newDiv=document.createElement('Div');
 	newDiv.className='blog';
 	newDiv.id='Post'+Number;
@@ -36,9 +36,13 @@ function createPostTitle(Number,Title,Date,Text){
 	document.getElementsByClassName('blogs').item(0).appendChild(newDiv);
 
 
-	//Question text
-	var newContent=document.createTextNode('<a href="https://j1233.minetest.land/blog">'+Title+'</a> - '+Date);
-	newDiv.appendChild(newContent);
+	//Blog title
+	var a = document.createElement('a');
+	var linkText = document.createTextNode(Title);
+	a.appendChild(linkText);
+	a.title = Title;
+	a.href = "https://j1233.minetest.land/blog";
+	newDiv.appendChild(a);
 
 	var newLine=document.createElement('br');
  	newDiv.appendChild(newLine);
