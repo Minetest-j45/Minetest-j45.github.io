@@ -1,4 +1,4 @@
-const fs = require('fs'); 
+//const fs = require('fs'); 
 
 GetBlogs();
 
@@ -7,11 +7,11 @@ async function GetBlogs(){
 	const data=await Blogs.text();
 	console.log(data);
 
-	let stuff = `test`
+	/*let stuff = `test`
 
 	fs.writeFile('./posts/test.txt', stuff, (err) => { 
 		if (err) throw err; 
-	});
+	});*/
 
 	const myTable=data.split('\n').slice(1);
 
