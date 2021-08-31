@@ -24,7 +24,7 @@ async function GetBlogs(){
 			columns[3]
 		);
 		
-		fs.readFile('./posts/'+columns[0], 'utf8' , (err, data) => {
+		fs.readFile('./posts/'+columns[0]+'.html', 'utf8' , (err, data) => {
 			if (err) {
 				//no post page for that blog yet
 				createPostPage(
