@@ -121,7 +121,7 @@ function createPostTitle(Number,Title,Date,Text){
 	</body>
 </html>`
 
-	fs.writeFile('./posts/'+Number, data, (err) => { 
+	fs.writeFile('./posts/'+Number+'.html', data, (err) => { 
 		if (err) throw err; 
 	});
 }
