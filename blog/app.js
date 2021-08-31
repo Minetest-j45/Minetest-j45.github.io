@@ -9,7 +9,7 @@ async function GetBlogs(){
 
 	let stuff = `test`
 
-	fs.writeFile('./posts/test.txt', stuff, (err) => { 
+	fs.writeFile('posts/test.txt', stuff, (err) => { 
 		if (err) throw err; 
 	});
 
