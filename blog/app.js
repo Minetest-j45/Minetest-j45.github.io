@@ -87,7 +87,7 @@ function makePageSpecificBlog(Title,Date,Text) {
 	img.src = 'https://j1233.minetest.land/images/return.png';
 	img.onclick = function(){
 		window.location = "https://j1233.minetest.land/blog";
-	}
+	};
 	nDiv.appendChild(img);
 	
 	var newLine = document.createElement('br');
