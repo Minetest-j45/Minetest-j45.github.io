@@ -26,7 +26,7 @@ function createPostTitle(Title,Date,Text) {
 	//Blog Block
 	var newDiv=document.createElement('Div');
 	newDiv.className = 'blog';
-	newDiv.id = Title;
+	newDiv.id = Title.replace(" ", "_");
 	document.getElementsByClassName('blogs').item(0).appendChild(newDiv);
 	
 	var newLine = document.createElement('br');
@@ -34,7 +34,7 @@ function createPostTitle(Title,Date,Text) {
 
 	//Blog title
 	var btn = document.createElement("myButton");
-	btn.innerHTML = Title.replace(" ", "_");
+	btn.innerHTML = Title;
 	btn.onclick = function () {
 		makePageSpecificBlog(Title,Date,Text);
 	};
