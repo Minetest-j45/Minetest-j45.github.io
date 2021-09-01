@@ -45,7 +45,6 @@ function makePageSpecificBlog(Title,Date,Text) {
 	//remove all current things
 	document.getElementsByClassName('blogs').item(0).replaceChildren();
 	
-	
 	var nDiv = document.createElement('Div');
 	document.getElementsByClassName('blogs').item(0).appendChild(nDiv);
 
@@ -79,4 +78,18 @@ function makePageSpecificBlog(Title,Date,Text) {
 	a.title = "Share this blog post!";
 	a.href = "http://j1233.minetest.land/blog/#"+Title.replaceAll(" ", "_");
 	nDiv.appendChild(a);
+
+	var newLine = document.createElement('br');
+ 	nDiv.appendChild(newLine);
+	
+
+	var img = document.createElement("img");
+	img.src = 'https://j1233.minetest.land/images/return.png';
+	img.onclick = function(){
+		window.location = "https://j1233.minetest.land/blog";
+	}
+	nDiv.appendChild(img);
+	
+	var newLine = document.createElement('br');
+ 	nDiv.appendChild(newLine);
 }
