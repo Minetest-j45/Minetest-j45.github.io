@@ -34,7 +34,7 @@ function createPostTitle(Title,Date,Text) {
 
 	//Blog title
 	var btn = document.createElement("myButton");
-	btn.innerHTML = Title;
+	btn.innerHTML = Title.replace(" ", "_");
 	btn.onclick = function () {
 		makePageSpecificBlog(Title,Date,Text);
 	};
@@ -77,6 +77,6 @@ function makePageSpecificBlog(Title,Date,Text) {
 	var linkText = document.createTextNode("Share this blog post!");
 	a.appendChild(linkText);
 	a.title = "Share this blog post!";
-	a.href = "http://j1233.minetest.land/blog/#"+Title;
+	a.href = "http://j1233.minetest.land/blog/#"+Title.replace(" ", "_");
 	nDiv.appendChild(a);
 }
