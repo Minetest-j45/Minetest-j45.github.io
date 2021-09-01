@@ -42,9 +42,13 @@ function createPostTitle(Title,Date,Text) {
 }
 
 function makePageSpecificBlog(Title,Date,Text) {
-	//remove all current things
+	//tip
+	document.getElementsByClassName('tips').item(0).replaceChildren();
+	var newTip = document.createTextNode("TIP: Click on the return arrow at the bottom of the blog to go back to the main blog page!");
+	document.getElementsByClassName('tips').item(0).appendChild(newTip);
+
+	//blog
 	document.getElementsByClassName('blogs').item(0).replaceChildren();
-	
 	var nDiv = document.createElement('Div');
 	document.getElementsByClassName('blogs').item(0).appendChild(nDiv);
 
@@ -66,7 +70,7 @@ function makePageSpecificBlog(Title,Date,Text) {
  	nDiv.appendChild(newLine);
 
 	//text
-	var newText = document.createTextNode(Text);
+	newText = document.createTextNode(Text);
 	nDiv.appendChild(newText);
 	
 	var newLine = document.createElement('br');
