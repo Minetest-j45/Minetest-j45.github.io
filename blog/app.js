@@ -12,7 +12,7 @@ async function GetBlogs() {
 
 		const columns = row.split('|');
 
-		createPostTitle(
+		createPostTitle(	
 			columns[0],
 			columns[1],
 			columns[2]
