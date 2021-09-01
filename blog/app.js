@@ -26,7 +26,7 @@ function createPostTitle(Title,Date,Text) {
 	//Blog Block
 	var newDiv=document.createElement('Div');
 	newDiv.className = 'blog';
-	newDiv.id = Title.replace(" ", "_");
+	newDiv.id = Title.replaceAll(" ", "_");
 	document.getElementsByClassName('blogs').item(0).appendChild(newDiv);
 	
 	var newLine = document.createElement('br');
@@ -77,6 +77,6 @@ function makePageSpecificBlog(Title,Date,Text) {
 	var linkText = document.createTextNode("Share this blog post!");
 	a.appendChild(linkText);
 	a.title = "Share this blog post!";
-	a.href = "http://j1233.minetest.land/blog/#"+Title.replace(" ", "_");
+	a.href = "http://j1233.minetest.land/blog/#"+Title.replaceAll(" ", "_");
 	nDiv.appendChild(a);
 }
