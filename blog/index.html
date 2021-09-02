@@ -27,6 +27,19 @@
 			}
 			.tips {
 			}
+			#myInput {
+				background-image: url('https://j1233.minetest.land/images/search.png');
+				background-position: 10px 12px;
+				background-repeat: no-repeat;
+				width: 70%;
+				font-size: 16px;
+				padding: 12px 20px 12px 40px;
+				border: 1px solid #ddd;
+				border-radius: 8px;
+				margin-left: 10%;
+				margin-top: 1%;
+				margin-right: 10%;
+			}
 			.blogs {
 				border: 5px outset purple;
 				background-color: #ff9b9b;
@@ -55,11 +68,11 @@
 			<div class="tips">
 				TIP: Click on a Blog title that you are interested in to bring up the full blog!
 			</div>
+			<input type="search" id="myInput" oninput="search()" placeholder="Search for blog posts.." title="Type in some words">
 			<div class="blogs">
-				<br>
-				<bigtext>My Posts:<bigtext><br>
+				
 			</div>
-			<script src='https://j1233.minetest.land/blog/app.js'></script>
+			<script src='app.js'></script>
 		</center>
 	</body>
 </html>
