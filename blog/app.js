@@ -23,6 +23,18 @@ async function GetBlogs() {
 	var newLine = document.createElement('br');
  	neDiv.appendChild(newLine);
 
+	//for share option
+	for (let iRow = 0; iRow < myTable.length; iRow++) {
+		const row = myTable[iRow];
+		const columns = row.split('|');
+		var hash = window.location.hash.toLowerCase();
+		var lowTitle = "#"+columns[0].replaceAll(" ", "_").toLowerCase();
+		if (hash == lowTitle) {
+			makePageSpecificBlog(columns[0],columns[1],columns[2]);
+			return;
+		};
+	};
+
 	for (let iRow = myTable.length-1; iRow >= 0; iRow--) {
 
 		const row = myTable[iRow];
@@ -42,7 +54,6 @@ function createPostTitle(Title,Date,Text) {
 	//Blog Block
 	var newDiv=document.createElement('Div');
 	newDiv.className = 'blog';
-	newDiv.id = Title.replaceAll(" ", "_");
 	document.getElementsByClassName('blogs').item(0).appendChild(newDiv);
 
 	var newLine = document.createElement('br');
