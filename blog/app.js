@@ -116,6 +116,7 @@ function makePageSpecificBlog(Title,Date,Text) {
 
 	var img = document.createElement("img");
 	img.src = 'https://j1233.minetest.land/images/return.png';
+	img.style = 'cursor: pointer;';
 	img.onclick = function(){
 		window.location = "https://j1233.minetest.land/blog";
 	};
