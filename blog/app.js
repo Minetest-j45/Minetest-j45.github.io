@@ -103,12 +103,14 @@ function makePageSpecificBlog(Title,Date,Text) {
 	var newLine = document.createElement('br');
  	nDiv.appendChild(newLine);
 	
-	var a = document.createElement('a');
-	var linkText = document.createTextNode("Share this blog post!");
-	a.appendChild(linkText);
-	a.title = "Share this blog post!";
-	a.href = "http://j1233.minetest.land/blog/#"+Title.replaceAll(" ", "_");
-	nDiv.appendChild(a);
+	var btn = document.createElement("myButton");
+	btn.style = "color: blue; text-decoration: underline;";
+	btn.innerHTML = "Share this blog post!";
+	btn.onclick = function(){
+		navigator.clipboard.writeText("https://j1233.minetest.land/blog/#"+Title.replaceAll(" ", "_"));
+		alert("Copied the link to share this blog post!");
+	};
+	nDiv.appendChild(btn);
 
 	var newLine = document.createElement('br');
  	nDiv.appendChild(newLine);
