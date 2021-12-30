@@ -1,7 +1,14 @@
 async function AddFooter() {
-    var footer = document.createTextNode('Copyright (c) 2021 j45 <j45minetest@gmail.com>');
+    var footer = document.createElement('span');
+    footer.innerHTML = 'Copyright (c) 2021 j45 &lt;j45minetest@gmail.com&gt;';
+    footer.style = 'bottom: 0px;';
+
     var newline = document.createElement('br');
-    var license = document.createTextNode('MIT License');
+
+    var license = document.createElement('span');
+    license.innerHTML = 'MIT License';
+    license.style = 'bottom: 0px;';
+
     var center = document.getElementsByTagName('center').item(0);
     center.appendChild(footer);
     center.appendChild(newline);
