@@ -1,6 +1,6 @@
 async function AddFooter() {
     var footer = document.createElement('span');
-    footer.innerHTML = 'Copyright (c) 2021 j45 &lt;j45minetest@gmail.com&gt;';
+    footer.innerHTML = 'Copyright (c) 2021-2022 j45 &lt;j45minetest@gmail.com&gt;';
     footer.style = 'bottom: 0px;';
 
     var newline = document.createElement('br');
