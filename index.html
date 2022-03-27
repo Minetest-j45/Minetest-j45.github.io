@@ -20,34 +20,6 @@
     <title>j45's website</title>
 
     <style type="text/css">
-        #nav {
-            background-color: #303030;
-            width: 95%;
-            height: 40%;
-            display: flex;
-            padding: 1%;
-            flex-wrap: nowrap;
-            align-items: center;
-            justify-content: flex-end;
-        }
-        
-        #nav img {
-            margin-right: auto;
-        }
-        
-        .nav-link {
-            font-size: 23px;
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            margin-right: 6%;
-            transition: transform .2s;
-        }
-        
-        .nav-link:hover {
-            transform: scale(1.1);
-            color: rgba(255, 255, 255, 1);
-        }
-        
         vbt {
             font-size: 40px;
         }
@@ -196,19 +168,6 @@
 
 <body>
     <center>
-        <div id="nav">
-            <img src="https://j1233.minetest.land/images/j45withname.png" width="6%" height="6%" style="image-rendering: pixelated; image-rendering: crisp-edges;">
-            <a href="https://j1233.minetest.land/#nav" class="nav-link">Home</a>
-            <a href="https://j1233.minetest.land/#portfolio " class="nav-link ">Portfolio</a>
-            <a href="https://j1233.minetest.land/blog/ " class="nav-link ">Blog</a>
-            <a onclick="discordFunc()" class="nav-link">Discord</a>
-            <script>
-                function discordFunc() {
-                    window.open("https://discordapp.com/invite/pQ8HaE78Mt ").focus();
-                }
-            </script>
-        </div>
-
         <br>
         <vbt>Hey, I'm j45 <span class="wave ">👋</span></vbt>
         <br><br>
@@ -282,6 +241,7 @@
             x += 1
         };
     </script>
+    <script src='nav.js'></script>
     <script src='https://j1233.minetest.land/footer.js'></script>
 </body>
 
