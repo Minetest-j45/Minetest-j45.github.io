@@ -1,184 +1,290 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<html lang="en">
 
-		<link rel="stylesheet" href="https://j1233.minetest.land/css/index.css?v=1.0">
-		<link rel = "icon" href = "https://j1233.minetest.land/images/j45.png" type = "image/x-icon">
+<head>
+    <meta charset="utf-8">
+    <html lang="en">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="j45's website">
-		
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="http://j1233.minetest.land/">
-		<meta property="og:title" content="j45">
-		<meta name="og:description" content="Hi, I'm j45(he/him). I am 15 years old and I live in England; in my free time, I like to program, play video games or hang out with friends.">
-		<meta name="og:image" content="https://j1233.minetest.land/images/bigj45.png">
+    <link rel="stylesheet" href="https://j1233.minetest.land/css/index.css?v=1.0">
+    <link rel="icon" href="https://j1233.minetest.land/images/j45.png" type="image/x-icon">
 
-		<title>j45's website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="j45's website">
 
-		<style type="text/css">
-			#nav {
-				border: 5px outset purple;
-				background-color: white;
-				width: 30%;
-				height: 40%;
-			}
-			vbt {
-				font-size: 40px;
-			}
-			bigtext {
-				font-size: 23px;
-			}
-			.media-links img {
-				width: 45px;
-				transition: transform .2s;
-			}
-			.media-links img:hover {
-				transform: scale(1.5);
-				opacity:0.7;
-			}
-			.undo-ul, .undo-ul > li {
-				display: inline-block;
-				list-style: none;
-				margin: 0;
-				padding: 0;
-			}
-			#portfolio {
-				border: 5px outset purple;
-				margin: 1% 5% 0;
-				display:flex;
-                flex-wrap:wrap;
-                justify-content:center;
-				align-items: center;
-			}
-			.wave:hover {
-  				animation-name: wave-animation;
-  				animation-duration: 2.5s;
-  				animation-iteration-count: infinite;
-  				transform-origin: 70% 70%;
-  				display: inline-block;
-			}
-			@keyframes wave-animation {
-   				 0% { transform: rotate( 0.0deg) }
-   				10% { transform: rotate(14.0deg) }
-   				20% { transform: rotate(-8.0deg) }
-   				30% { transform: rotate(14.0deg) }
-   				40% { transform: rotate(-4.0deg) }
-   				50% { transform: rotate(10.0deg) }
-   				60% { transform: rotate( 0.0deg) }
-  				100% { transform: rotate( 0.0deg) }
-			}
-			.portfolio-icons{
-            	width:100%;
-                margin:0 -10px;
-                padding:0;
-           	}
-            .portfolio-icons li{
-				margin:10px;
-				padding:0;
-				flex:0 1 calc(25% - 10px*2);
-				min-width:100px;
-			}
-            .portfolio-icons li a{
-				display:block;
-				position:relative;
-				margin:0;
-				border-radius:3px;
-				cursor:pointer;
-				background:#333;
-				overflow:hidden;
-				background-size:cover;
-			}
-            .portfolio-icons li a:before{
-				content:'';
-				float:left;
-				padding-top:100%;
-			}
-			.portfolio-icons li a .info{
-				transition:all 150ms ease 0s;
-				display:block;
-				position:absolute;
-				top:calc(100% - 2.5em);
-				right:0;
-				bottom:0;
-				left:0;
-				margin:0;
-				padding:0;
-				overflow:hidden;
-				background:rgba(0,0,0,0.6);
-				font-size:10pt;
-				color:#fff;
-				text-decoration:none;
-			}
-			.portfolio-icons li a .info span{
-				display:block;
-				margin:0;
-				padding:0.5em;
-				text-align:center;
-				font-weight:bold;
-			}
-			.portfolio-icons li a .info p{
-				margin:0;
-				padding:1em;
-			}
-			.portfolio-icons li a:hover{
-				box-shadow:0 0 20px #000;
-				z-index:2;
-			}
-			.portfolio-icons li a:hover .info{
-				top:50%;
-				background:rgba(0,0,0,0.8);
-			}
-			.portfolio-icons li a:hover .info p{
-				display:block;
-			}
-			.break {
-				flex-basis: 100%;
-				height: 0;
-			}
-		</style>
-	</head>
-	<body>
-		<center>
-			<div id="nav">
-				<img src="https://j1233.minetest.land/images/j45withname.png" width="18%" height="18%" style="image-rendering: pixelated; image-rendering: crisp-edges">
-				<button onclick="location = 'https://j1233.minetest.land/#nav';">Home</button>
-				<button onclick="location = 'https://j1233.minetest.land/#portfolio';">Portfolio</button>
-			   	<button onclick="location = 'https://j1233.minetest.land/blog/';">Blog</button>
-				<button onclick="discordFunc()">Discord</button>
-				<script>function discordFunc() {
-						window.open("https://discordapp.com/invite/pQ8HaE78Mt").focus();
-					}
-				</script>
-				<button onclick="location = 'https://j1233.minetest.land/contact/';">Contact</button>
-			</div>
-			<br>
-			<vbt>Hey, I'm j45 <span class="wave">👋</span></vbt>
-			<br><br>
-			<bigtext>Hi, I'm j45(he/him). I am 15 years old and I live in England; in my free time, I like to program, play video games or hang out with friends.</bigtext>
-			<br><br>
-			<ul class="undo-ul media-links">
-				<li> <a href="https://j1233.minetest.land/blog/" title="Blog" rel="me"> <img alt="Blog" src="https://j1233.minetest.land/images/blog.png" /> </a> </li>
-				<li> <a href="https://github.com/Minetest-j45/" title="GitHub" rel="me"> <img alt="GitHub" src="https://j1233.minetest.land/images/github.png" /> </a> </li>
-				<li> <a href="https://twitter.com/j4547497813/" title="Twitter" rel="me"> <img alt="Twitter" src="https://j1233.minetest.land/images/twitter.png" /> </a> </li>
-			</ul>
-			<div id="portfolio">
-				<vbt>My portfolio</vbt>
-				<ul class="undo-ul portfolio-icons">
-					<li> <a href="https://github.com/Minetest-j45/discord-irc_relay" style="background-image: url('https://j1233.minetest.land/images/portfolio/irc-discord.png'); width: 240px; height: 240px;"> <div class="info"> <span>IRC<->Discord Relay</span> <p> A customisable chat relay that relays between an IRC channel and a Discord channel.</p> </div> </a> </li>
-					<li> <a href="https://github.com/Minetest-j45/jewelraid" style="background-image: url('https://j1233.minetest.land/images/portfolio/jewelraid.png'); width: 240px; height: 240px;"> <div class="info"> <span>Jewelraid</span> <p> A Minetest mod that adds a game where each team has to steal jewels from the other team to not loose.</p> </div> </a> </li>
-					<li> <a href="https://github.com/Minetest-j45/j_mute" style="background-image: url('https://j1233.minetest.land/images/portfolio/mute.png'); width: 240px; height: 240px;"> <div class="info"> <span>JMute</span> <p> A Minetest mod that adds the ability to temporarily/permanently mute players.</p> </div> </a> </li>
-					<li> <a href="https://github.com/Minetest-j45/time_stone" style="background-image: url('https://j1233.minetest.land/images/portfolio/timestone.png'); width: 240px; height: 240px;"> <div class="info"> <span>Time Stone</span> <p> A Minetest Mod that adds stones that can change the time.</p> </div> </a> </li>
-					<li> <a href="https://github.com/Minetest-j45/teleport_carrot" style="background-image: url('https://j1233.minetest.land/images/portfolio/telecarrot.png'); width: 240px; height: 240px;"> <div class="info"> <span>Teleport Carrot</span> <p> A Minetest mod that adds an item that has a chance of teleporting you somewhere nearby.</p> </div> </a> </li>
-					<li> <a href="https://github.com/Minetest-j45/protective_shell" style="background-image: url('https://j1233.minetest.land/images/portfolio/prot.png'); width: 240px; height: 240px;"> <div class="info"> <span>Protective Shell</span> <p> A Dragonfire client CSM that makes a barrier around you.</p> </div> </a> </li>
-				</ul>
-			</div>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://j1233.minetest.land/">
+    <meta property="og:title" content="j45">
+    <meta name="og:description" content="Hi, I'm j45(he/him). I am 15 years old and I live in England; in my free time, I like to program, play video games or hang out with friends.">
+    <meta name="og:image" content="https://j1233.minetest.land/images/bigj45.png">
 
-			<!--Copyright (c) 2021 j45 &lt;j45minetest@gmail.com&gt;<br>MIT License-->
-		</center>
-		<script>var x=0; while(x<0.5){alert("Please note that this website is still a WIP, click OK to continue");x+=1};</script>
-		<script src='https://j1233.minetest.land/footer.js'></script>
-	</body>
+    <title>j45's website</title>
+
+    <style type="text/css">
+        #nav {
+            background-color: #303030;
+            width: 95%;
+            height: 40%;
+            display: flex;
+            padding: 1%;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        
+        #nav img {
+            margin-right: auto;
+        }
+        
+        .nav-link {
+            font-size: 23px;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            margin-right: 6%;
+            transition: transform .2s;
+        }
+        
+        .nav-link:hover {
+            transform: scale(1.1);
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        vbt {
+            font-size: 40px;
+        }
+        
+        bigtext {
+            font-size: 23px;
+        }
+        
+        .media-links img {
+            width: 45px;
+            transition: transform .2s;
+        }
+        
+        .media-links img:hover {
+            transform: scale(1.5);
+            opacity: 0.7;
+        }
+        
+        .undo-ul,
+        .undo-ul>li {
+            display: inline-block;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #portfolio {
+            border: 5px outset purple;
+            margin: 1% 5% 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .wave:hover {
+            animation-name: wave-animation;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+            transform-origin: 70% 70%;
+            display: inline-block;
+        }
+        
+        @keyframes wave-animation {
+            0% {
+                transform: rotate( 0.0deg)
+            }
+            10% {
+                transform: rotate(14.0deg)
+            }
+            20% {
+                transform: rotate(-8.0deg)
+            }
+            30% {
+                transform: rotate(14.0deg)
+            }
+            40% {
+                transform: rotate(-4.0deg)
+            }
+            50% {
+                transform: rotate(10.0deg)
+            }
+            60% {
+                transform: rotate( 0.0deg)
+            }
+            100% {
+                transform: rotate( 0.0deg)
+            }
+        }
+        
+        .portfolio-icons {
+            width: 100%;
+            margin: 0 -10px;
+            padding: 0;
+        }
+        
+        .portfolio-icons li {
+            margin: 10px;
+            padding: 0;
+            flex: 0 1 calc(25% - 10px*2);
+            min-width: 100px;
+        }
+        
+        .portfolio-icons li a {
+            display: block;
+            position: relative;
+            margin: 0;
+            border-radius: 3px;
+            cursor: pointer;
+            background: #333;
+            overflow: hidden;
+            background-size: cover;
+        }
+        
+        .portfolio-icons li a:before {
+            content: '';
+            float: left;
+            padding-top: 100%;
+        }
+        
+        .portfolio-icons li a .info {
+            transition: all 150ms ease 0s;
+            display: block;
+            position: absolute;
+            top: calc(100% - 2.5em);
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.6);
+            font-size: 10pt;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .portfolio-icons li a .info span {
+            display: block;
+            margin: 0;
+            padding: 0.5em;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .portfolio-icons li a .info p {
+            margin: 0;
+            padding: 1em;
+        }
+        
+        .portfolio-icons li a:hover {
+            box-shadow: 0 0 20px #000;
+            z-index: 2;
+        }
+        
+        .portfolio-icons li a:hover .info {
+            top: 50%;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        
+        .portfolio-icons li a:hover .info p {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div id="nav">
+            <img src="https://j1233.minetest.land/images/j45withname.png" width="6%" height="6%" style="image-rendering: pixelated; image-rendering: crisp-edges;">
+            <a href="https://j1233.minetest.land/#nav" class="nav-link">Home</a>
+            <a href="https://j1233.minetest.land/#portfolio " class="nav-link ">Portfolio</a>
+            <a href="https://j1233.minetest.land/blog/ " class="nav-link ">Blog</a>
+            <a onclick="discordFunc()" class="nav-link">Discord</a>
+            <script>
+                function discordFunc() {
+                    window.open("https://discordapp.com/invite/pQ8HaE78Mt ").focus();
+                }
+            </script>
+        </div>
+
+        <br>
+        <vbt>Hey, I'm j45 <span class="wave ">👋</span></vbt>
+        <br><br>
+        <bigtext>Hi, I'm j45(he/him). I am 15 years old and I live in England; in my free time, I like to program, play video games or hang out with friends.</bigtext>
+        <br><br>
+        <ul class="undo-ul media-links">
+            <li>
+                <a href="https://j1233.minetest.land/blog/ " title="Blog " rel="me "> <img alt="Blog " src="https://j1233.minetest.land/images/blog.png " /> </a>
+            </li>
+            <li>
+                <a href="https://github.com/Minetest-j45/ " title="GitHub " rel="me "> <img alt="GitHub " src="https://j1233.minetest.land/images/github.png " /> </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/j4547497813/ " title="Twitter " rel="me "> <img alt="Twitter " src="https://j1233.minetest.land/images/twitter.png " /> </a>
+            </li>
+        </ul>
+        <div id="portfolio">
+            <vbt>My portfolio</vbt>
+            <ul class="undo-ul portfolio-icons">
+                <li>
+                    <a href="https://github.com/Minetest-j45/discord-irc_relay " style="background-image: url( 'https://j1233.minetest.land/images/portfolio/irc-discord.png'); width: 240px; height: 240px; ">
+                        <div class="info"> <span>IRC<->Discord Relay</span>
+                            <p> A customisable chat relay that relays between an IRC channel and a Discord channel.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Minetest-j45/jewelraid " style="background-image: url( 'https://j1233.minetest.land/images/portfolio/jewelraid.png'); width: 240px; height: 240px; ">
+                        <div class="info"> <span>Jewelraid</span>
+                            <p> A Minetest mod that adds a game where each team has to steal jewels from the other team to not loose.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Minetest-j45/j_mute " style="background-image: url( 'https://j1233.minetest.land/images/portfolio/mute.png'); width: 240px; height: 240px; ">
+                        <div class="info"> <span>JMute</span>
+                            <p> A Minetest mod that adds the ability to temporarily/permanently mute players.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Minetest-j45/time_stone " style="background-image: url( 'https://j1233.minetest.land/images/portfolio/timestone.png'); width: 240px; height: 240px; ">
+                        <div class="info"> <span>Time Stone</span>
+                            <p> A Minetest Mod that adds stones that can change the time.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Minetest-j45/teleport_carrot " style="background-image: url( 'https://j1233.minetest.land/images/portfolio/telecarrot.png'); width: 240px; height: 240px; ">
+                        <div class="info "> <span>Teleport Carrot</span>
+                            <p> A Minetest mod that adds an item that has a chance of teleporting you somewhere nearby.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Minetest-j45/protective_shell " style="background-image: url( 'https://j1233.minetest.land/images/portfolio/prot.png'); width: 240px; height: 240px; ">
+                        <div class="info "> <span>Protective Shell</span>
+                            <p> A Dragonfire client CSM that makes a barrier around you.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--Copyright (c) 2021 j45 &lt;j45minetest@gmail.com&gt;<br>MIT License-->
+    </center>
+    <script>
+        var x = 0;
+        while (x < 0.5) {
+            alert("Please note that this website is still a WIP, click OK to continue ");
+            x += 1
+        };
+    </script>
+    <script src='https://j1233.minetest.land/footer.js'></script>
+</body>
+
+</html>
+
 </html>
