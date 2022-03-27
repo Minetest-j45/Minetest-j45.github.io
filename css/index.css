@@ -1,12 +1,40 @@
 html {
-	height: 100%;
-	scroll-behavior: smooth;
+    height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
-	height: 100%;
-	background: linear-gradient(to bottom right, #cc0099 1%, #9999ff 100%);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	font-family: "Lucida Console", "Courier New", monospace;
+    height: 100%;
+    background: linear-gradient(to bottom right, #cc0099 1%, #9999ff 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#nav {
+    background-color: #303030;
+    width: 95%;
+    height: 40%;
+    display: flex;
+    padding: 1%;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#nav img {
+    margin-right: auto;
+}
+
+.nav-link {
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    margin-right: 6%;
+    transition: transform .2s;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    color: rgba(255, 255, 255, 1);
 }
