@@ -2,10 +2,13 @@ async function AddNav() {
     var nav = document.createElement('div');
     nav.setAttribute('id', 'nav');
 
-    screenWidth = window.screen.width
-    screenHeight = window.screen.height
-    var wpixels = screenWidth - (6 * screenWidth);
-    var hpixels = screenHeight - (6 * screenHeight);
+    var percentage = 5; // % 
+    var screenWidth = window.screen.width;
+    var screenHeight = window.screen.height;
+    var wpixels = Math.round((percentage / 100) * screenWidth);
+    var hpixels = Math.round((percentage / 100) * screenHeight);
+    console.log(wpixels);
+    console.log(hpixels);
     var img = new Image(wpixels, hpixels);
     img.src = 'https://j1233.minetest.land/images/j45withname.png';
     img.style = 'image-rendering: pixelated; image-rendering: crisp-edges;';
