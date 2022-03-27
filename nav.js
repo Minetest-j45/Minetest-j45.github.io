@@ -1,5 +1,6 @@
 async function AddNav() {
-    var nav = document.createElement('nav');
+    var nav = document.createElement('div');
+    nav.id = 'nav';
 
     var icon = document.createElement('img');
     icon.src = 'https://j1233.minetest.land/images/j45withname.png';
