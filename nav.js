@@ -2,8 +2,11 @@ async function AddNav() {
     var nav = document.createElement('div');
     nav.setAttribute('id', 'nav');
 
-    var pixels = screenWidth - (6 * screenWidth);
-    var img = new Image(pixels, pixels);
+    screenWidth = window.screen.width
+    screenHeight = window.screen.height
+    var wpixels = screenWidth - (6 * screenWidth);
+    var hpixels = screenHeight - (6 * screenHeight);
+    var img = new Image(wpixels, hpixels);
     img.src = 'https://j1233.minetest.land/images/j45withname.png';
     img.style = 'image-rendering: pixelated; image-rendering: crisp-edges;';
     nav.appendChild(img);
