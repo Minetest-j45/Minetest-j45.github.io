@@ -2,10 +2,8 @@ async function AddNav() {
     var nav = document.createElement('div');
     nav.setAttribute('id', 'nav');
 
-    var img = new Image();
+    var img = new Image("6%", "6%");
     img.src = 'https://j1233.minetest.land/images/j45withname.png';
-    img.width = '6%';
-    img.height = '6%';
     img.style = 'image-rendering: pixelated; image-rendering: crisp-edges;';
     nav.appendChild(img);
 
