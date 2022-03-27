@@ -2,12 +2,12 @@ async function AddNav() {
     var nav = document.createElement('div');
     nav.setAttribute('id', 'nav');
 
-    var icon = document.createElement('img');
-    icon.src = 'https://j1233.minetest.land/images/j45withname.png';
-    icon.width = '6%';
-    icon.height = '6%';
-    icon.style = 'image-rendering: pixelated; image-rendering: crisp-edges;';
-    nav.appendChild(icon);
+    var img = new Image();
+    img.src = 'https://j1233.minetest.land/images/j45withname.png';
+    img.width = '6%';
+    img.height = '6%';
+    img.style = 'image-rendering: pixelated; image-rendering: crisp-edges;';
+    nav.appendChild(img);
 
     var homeLink = document.createElement('a');
     homeLink.href = 'https://j1233.minetest.land/#nav';
