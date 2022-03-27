@@ -2,9 +2,13 @@ async function AddNav() {
     var nav = document.createElement('div');
     nav.setAttribute('id', 'nav');
 
-    var img = new Image("6%", "6%");
+    var img = new Image();
     img.src = 'https://j1233.minetest.land/images/j45withname.png';
     img.style = 'image-rendering: pixelated; image-rendering: crisp-edges;';
+    img.onload = function() {
+        img.width = '6%';
+        img.height = '6%';
+    };
     nav.appendChild(img);
 
     var homeLink = document.createElement('a');
