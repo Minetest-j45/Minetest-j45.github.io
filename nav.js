@@ -1,6 +1,6 @@
 async function AddNav() {
     var nav = document.createElement('div');
-    nav.id = 'nav';
+    nav.setAttribute('id', 'nav');
 
     var icon = document.createElement('img');
     icon.src = 'https://j1233.minetest.land/images/j45withname.png';
@@ -11,19 +11,19 @@ async function AddNav() {
 
     var homeLink = document.createElement('a');
     homeLink.href = 'https://j1233.minetest.land/#nav';
-    homeLink.className = 'nav-link';
+    homeLink.setAttribute('class', 'nav-link');
     homeLink.innerHTML = 'Home';
     nav.appendChild(homeLink);
 
     var portfolioLink = document.createElement('a');
     portfolioLink.href = 'https://j1233.minetest.land/#portfolio';
-    portfolioLink.className = 'nav-link';
+    portfolioLink.setAttribute('class', 'nav-link');
     portfolioLink.innerHTML = 'Portfolio';
     nav.appendChild(portfolioLink);
 
     var blogLink = document.createElement('a');
     blogLink.href = 'https://j1233.minetest.land/blog/';
-    blogLink.className = 'nav-link';
+    blogLink.setAttribute('class', 'nav-link');
     blogLink.innerHTML = 'Blog';
     nav.appendChild(blogLink);
 
@@ -31,7 +31,7 @@ async function AddNav() {
     discordLink.onclick = function() {
         window.open("https://discordapp.com/invite/pQ8HaE78Mt ").focus();
     };
-    discordLink.className = 'nav-link';
+    discordLink.setAttribute('class', 'nav-link');
     discordLink.innerHTML = 'Discord';
     nav.appendChild(discordLink);
 
