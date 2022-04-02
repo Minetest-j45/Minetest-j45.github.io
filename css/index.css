@@ -24,17 +24,50 @@ body {
 
 #nav img {
     margin-right: auto;
+    margin-left: 2%;
 }
 
 .nav-link {
     font-size: 23px;
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
-    margin-right: 6%;
+    margin-right: 3%;
     transition: transform .2s;
 }
 
 .nav-link:hover {
     transform: scale(1.1);
     color: rgba(255, 255, 255, 1);
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.burger {
+    display: none;
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-right: 6%;
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+    #nav {
+        flex-wrap: wrap;
+    }
+    .burger {
+        display: block;
+    }
+    .nav-link {
+        display: none;
+    }
+    input[type=checkbox]:checked~.nav-link {
+        display: block;
+        flex-basis: 50%;
+        align-items: center;
+    }
+    input[type=checkbox]:checked~.burger {
+        flex-basis: 45%;
+    }
 }
