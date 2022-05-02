@@ -9,7 +9,6 @@ async function AddNav() {
     img.src = 'https://j1233.minetest.land/images/j45withname.png';
     nav.appendChild(img);
 
-
     var checkbox = document.createElement('input');
     checkbox.setAttribute('type', 'checkbox');
     checkbox.setAttribute('id', 'checkbox_toggle');
