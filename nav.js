@@ -7,8 +7,8 @@ async function AddNav() {
     var wpixels = Math.round((percentage / 100) * screenWidth);
     var img = new Image(wpixels, wpixels);
     img.src = 'https://j1233.minetest.land/images/j45withname.png';
-    img.style = 'image-rendering: pixelated; image-rendering: crisp-edges;';
     nav.appendChild(img);
+
 
     var checkbox = document.createElement('input');
     checkbox.setAttribute('type', 'checkbox');

@@ -26,7 +26,9 @@ body {
     margin-right: auto;
     margin-left: 2%;
     margin-top: 2%;
-    margin-bottom: 2%
+    margin-bottom: 2%;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
 
 .nav-link {
@@ -60,6 +62,7 @@ input[type=checkbox] {
     }
     .burger {
         display: block;
+        flex-basis: 37%;
     }
     .nav-link {
         display: none;
@@ -68,8 +71,9 @@ input[type=checkbox] {
         display: block;
         flex-basis: 50%;
         align-items: center;
+        margin-right: 1px;
     }
     input[type=checkbox]:checked~.burger {
-        flex-basis: 45%;
+        flex-basis: 37%;
     }
 }
