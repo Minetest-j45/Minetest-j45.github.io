@@ -7,7 +7,9 @@ async function AddNav() {
     var wpixels = Math.round((percentage / 100) * screenWidth);
     var img = new Image(wpixels, wpixels);
     img.src = 'https://j1233.minetest.land/images/j45withname.png';
-    img.onclick = "location.href='https://j1233.minetest.land/'"
+    img.onclick = function() {
+        window.location.href = "https://j1233.minetest.land/"
+    }
     nav.appendChild(img);
 
     var checkbox = document.createElement('input');
@@ -41,7 +43,7 @@ async function AddNav() {
 
     var discordLink = document.createElement('a');
     discordLink.onclick = function() {
-        window.open("https://discordapp.com/invite/pQ8HaE78Mt ").focus();
+        window.open("https://discordapp.com/invite/pQ8HaE78Mt").focus();
     };
     discordLink.setAttribute('class', 'nav-link');
     discordLink.innerHTML = 'Discord';
