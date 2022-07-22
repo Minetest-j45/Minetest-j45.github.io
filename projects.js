@@ -25,7 +25,6 @@ async function GetProjects() {
 };
 
 function createProject(Title, Link, Img, Desc) {
-	//Project
 	var proj = document.createElement("li");
 
 	var a = document.createElement("a");
