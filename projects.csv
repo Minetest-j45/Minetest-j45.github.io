@@ -11,3 +11,4 @@ Serverlist CLI|https://github.com/Minetest-j45/serverlist_CLI||A CLI for Minetes
 Barrier Redo|https://github.com/Minetest-j45/barrier_redo|https://github.com/Minetest-j45/barrier_redo/blob/master/screenshot.png?raw=true|A fork of the Minetest barrier mod with an extra feature.
 Tag|https://github.com/Minetest-j45/tag||A Minetest mod that adds the ability to play tag.
 Biome Detector|https://github.com/Minetest-j45/biome_detector||A minetest mod that allows you to get the name of the biome you are in.
+Go Hash|https://github.com/Minetest-j45/go_hash||A custom hashing algorithm written in Go (NOT FOR REAL USE)
