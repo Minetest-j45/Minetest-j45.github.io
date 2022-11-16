@@ -28,16 +28,36 @@
             font-size: 23px;
         }
         
-        .media-links img {
-            width: 45px;
-            transition: transform .2s;
+        linkbtn {
+            background-color: none;
+            border: 0.4em solid #39cbfb;
+            border-radius: 0.8em;
+            padding: 0.3em;
+        }
+
+        linkbtn:hover {
+            background-color:  #39cbfb;
+            color: #333;
+        }
+
+        linkbtn a {
+            text-decoration: none;
         }
         
-        .media-links img:hover {
-            transform: scale(1.5);
-            opacity: 0.7;
+        linkbtn img {
+            width: 1.7em;
+            height: 1.7em;
+            margin-bottom: -0.4em;
         }
-        
+
+        linkbtn span {
+            color: white;
+        }
+
+        linkbtn:hover span {
+            color: #333;
+        }
+
         .undo-ul,
         .undo-ul>li {
             display: inline-block;
@@ -172,14 +192,22 @@
         <br><br>
         <bigtext>Hi, I'm j45(he/him). I am 16 years old and I live in England; in my free time, I like to program, play video games or hang out with friends.</bigtext>
         <br><br>
-        <ul class="undo-ul media-links">
+        <ul class="undo-ul">
             <li>
-                <a href="https://j1233.minetest.land/blog/" title="Blog " rel="me"> <img alt="Blog" src="https://j1233.minetest.land/images/blog.png" /> </a>
+                <linkbtn><a href="https://github.com/Minetest-j45/" title="GitHub " rel="me"> <img alt="" src="https://j1233.minetest.land/images/github.png" /><span>GitHub</span></a></linkbtn>
             </li>
             <li>
-                <a href="https://github.com/Minetest-j45/" title="GitHub " rel="me"> <img alt="GitHub" src="https://j1233.minetest.land/images/github.png" /> </a>
+                <linkbtn><a href="https://discord.com/" title="Discord " rel="me"> <img alt="" src="https://j1233.minetest.land/images/discord.png" /><span>Discord: j45#7171</span></a></linkbtn>
+            </li>
+            <li>
+                <linkbtn><a href="mailto:j45minetest@gmail.com" title="Email " rel="me"> <img alt="" src="https://j1233.minetest.land/images/email.png" /><span>Email</span></a></linkbtn>
+            </li>
+            <li>
+                <linkbtn><a href="https://j1233.minetest.land/blog/" title="Blog " rel="me"> <img alt="" src="https://j1233.minetest.land/images/blog.png" /><span>Blog</span></a></linkbtn>
             </li>
         </ul>
+        <br>
+        <br>
         <div id="portfolio">
             <vbt>My portfolio</vbt>
             <ul class="undo-ul portfolio-icons">
