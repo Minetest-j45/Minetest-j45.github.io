@@ -41,14 +41,6 @@ async function AddNav() {
     blogLink.innerHTML = 'Blog';
     nav.appendChild(blogLink);
 
-    var discordLink = document.createElement('a');
-    discordLink.onclick = function() {
-        window.open("https://discordapp.com/invite/pQ8HaE78Mt").focus();
-    };
-    discordLink.setAttribute('class', 'nav-link');
-    discordLink.innerHTML = 'Discord';
-    nav.appendChild(discordLink);
-
     var br = document.createElement('br');
 
     var center = document.getElementsByTagName('center').item(0);
