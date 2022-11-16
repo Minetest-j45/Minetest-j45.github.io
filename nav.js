@@ -35,11 +35,11 @@ async function AddNav() {
     portfolioLink.innerHTML = 'Portfolio';
     nav.appendChild(portfolioLink);
 
-    var blogLink = document.createElement('a');
-    blogLink.href = 'https://j1233.minetest.land/blog/';
-    blogLink.setAttribute('class', 'nav-link');
-    blogLink.innerHTML = 'Blog';
-    nav.appendChild(blogLink);
+    var links = document.createElement('a');
+    links.href = 'https://j1233.minetest.land/#links';
+    links.setAttribute('class', 'nav-link');
+    links.innerHTML = 'Links';
+    nav.appendChild(links);
 
     var br = document.createElement('br');
 
