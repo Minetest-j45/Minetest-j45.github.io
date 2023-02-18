@@ -30,7 +30,7 @@ async function AddNav() {
     nav.appendChild(homeLink);
 
     var portfolioLink = document.createElement('a');
-    portfolioLink.href = 'https://j1233.minetest.land/#portfolio';
+    portfolioLink.href = 'https://j1233.minetest.land/portfolio/';
     portfolioLink.setAttribute('class', 'nav-link');
     portfolioLink.innerHTML = 'Portfolio';
     nav.appendChild(portfolioLink);
