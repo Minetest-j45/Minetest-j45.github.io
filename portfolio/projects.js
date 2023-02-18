@@ -4,7 +4,7 @@ async function CreatePortfolio() {
     var wrapper = document.getElementById("portfolio");
     wrapper.innerHTML = "";
     
-    const Projects = await fetch("https://j1233.minetest.land/projects.csv");
+    const Projects = await fetch("https://j1233.minetest.land/portfolio/projects.csv");
 	const data = await Projects.text();
 
 	const projects = data.split("\n").slice(0);
