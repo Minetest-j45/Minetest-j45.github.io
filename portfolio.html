@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="https://j1233.minetest.land/images/j45.png" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="j45's website" />
+    <meta name="keywords" content="j45, j1233, minetest, open source, lua, golang, go" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://j1233.minetest.land/" />
+    <meta property="og:title" content="j45" />
+    <meta name="og:description" content="Hi, I'm j45(he/him). I am 16 years old and I live in England; in my free time, I like to program, play video games or hang out with friends." />
+    <meta name="og:image" content="https://j1233.minetest.land/images/bigj45.png" />
+
+    <title>j45's website</title>
+
+    <style type="text/css">
+        body {
+            background: #232323;
+        }
+
+        #blob {
+            background: linear-gradient(to bottom right, #a300a3 0%, #56dee7 100%);
+            height: 12rem;
+            aspect-ratio: 1;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            translate: -50% -50%;
+            border-radius: 50%;
+            animation: rotate 20s infinite;
+            z-index: -2;
+        }
+
+        #blur {
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            backdrop-filter: blur(16rem);
+            z-index: -1;
+        }
+
+        @keyframes rotate {
+            from {
+                rotate: 0deg;
+            }
+            25% {
+                scale: 1 1.4;
+            }
+            75%{
+                scale: 1.3 1.1;
+            }
+            to {
+                rotate: 360deg;
+            }
+        }
+
+        #portfolio {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            position: relative;
+
+            overflow: hidden;
+            animation: marquee 10s linear infinite;
+            width: 200%;
+        }
+
+        @keyframes marquee{
+            from { 
+                left: -100%; 
+            }
+            to {
+                left: 0; 
+            }
+        }
+
+        .row span {
+            display: flex;
+            justify-content: center;
+
+
+            float: left;
+            width: 50%;
+        }
+
+        .pject {
+            position: relative;
+            margin: 1vw;
+            min-width: 240px;
+            height: 240px;
+            border-radius: 5%;
+            float: left;
+            transition: all .2s ease-out;
+            cursor: pointer;
+            overflow: hidden;
+            background-size: cover;
+            content: '';
+        }
+
+        .row:hover {
+            animation-play-state: paused;
+        }
+        
+        .pject .info {
+            transition: all 150ms ease 0s;
+            display: block;
+            position: absolute;
+            top: calc(100% - 2.5em);
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.6);
+            font-size: 10pt;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .pject .info spen {
+            display: block;
+            margin: 0;
+            padding: 0.5em;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .pject.info p {
+            margin: 0;
+            padding: 1em;
+        }
+        
+        .pject:hover {
+            box-shadow: 0 0 20px #000;
+            z-index: 2;
+        }
+        
+        .pject:hover .info {
+            top: 50%;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        
+        .pject:hover .info p {
+            display: block;
+        }
+    </style>
+</head>
+
+<div id="blur"></div>
+<div id="blob"></div>
+<body>
+    <center>
+        <br>
+        <div id="portfolio">
+        </div>
+    </center>
+    <script src='https://j1233.minetest.land/nav.js'></script>
+    <script src='./projects.js'></script>
+    <script src='./blob.js'></script>
+    <script src='https://j1233.minetest.land/footer.js'></script>
+</body>
+</html>
