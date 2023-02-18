@@ -1,33 +1,36 @@
 html {
-    height: 100%;
+    height: 100vh;
     scroll-behavior: smooth;
+    overflow: auto;
 }
 
 body {
     height: 100vh;
-    width: 100vw;
     background: linear-gradient(to bottom right, #cc0099 1%, #9999ff 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: "Lucida Console", "Courier New", monospace;
+    font-family: 'JetBrains Mono', monospace;
+    overflow: auto;
+    margin: 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 #nav {
     background-color: #303030;
     width: 95%;
-    height: 40%;
+    height: max(20vh, 115px);
     display: flex;
     padding: 1%;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: flex-end;
+    margin-top: 1vh;
 }
 
 #nav img {
+    margin: 2%;
     margin-right: auto;
-    margin-left: 2%;
-    margin-top: 2%;
-    margin-bottom: 2%;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
 }
@@ -51,9 +54,8 @@ input[type=checkbox] {
 
 .burger {
     display: none;
-    font-size: 23px;
+    font-size: 2.5rem;
     color: rgba(255, 255, 255, 0.8);
-    margin-right: 6%;
     user-select: none;
 }
 
@@ -63,18 +65,17 @@ input[type=checkbox] {
     }
     .burger {
         display: block;
-        flex-basis: 37%;
+        flex-basis: 27%;
     }
     .nav-link {
         display: none;
     }
     input[type=checkbox]:checked~.nav-link {
         display: block;
-        flex-basis: 50%;
+        /*flex-basis: 67vw;*/
+        flex-basis: 27%;
         align-items: center;
-        margin-right: 1px;
-    }
-    input[type=checkbox]:checked~.burger {
-        flex-basis: 37%;
+        margin-left: 67vw;
+        padding-bottom: 1vw;
     }
 }
