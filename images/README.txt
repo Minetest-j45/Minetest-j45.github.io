@@ -1,1 +1,1 @@
-padlock.png, blog.png, email.png, discord.png, github.png amd return.png are from https://icons8.com/
+return.png is from https://icons8.com/
