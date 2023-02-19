@@ -15,7 +15,7 @@ async function CreatePortfolio() {
 
 	var portfolio = document.getElementById("portfolio");
     //determine the number of items from portfolio that would fit in one row
-    var itemsPerRow = Math.floor((portfolio.offsetWidth-240) / 240);
+    var itemsPerRow = Math.ceil((portfolio.offsetWidth-240) / 240);
     console.log(itemsPerRow);
 
     //get the number of rows needed
