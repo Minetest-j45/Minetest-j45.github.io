@@ -24,7 +24,7 @@ async function AddNav() {
     nav.appendChild(burger);
 
     var homeLink = document.createElement('a');
-    homeLink.href = 'https://j1233.minetest.land/#nav';
+    homeLink.href = 'https://j1233.minetest.land/';
     homeLink.setAttribute('class', 'nav-link');
     homeLink.innerHTML = 'Home';
     nav.appendChild(homeLink);
@@ -36,9 +36,9 @@ async function AddNav() {
     nav.appendChild(portfolioLink);
 
     var links = document.createElement('a');
-    links.href = 'https://j1233.minetest.land/#links';
+    links.href = 'https://j1233.minetest.land/contact/';
     links.setAttribute('class', 'nav-link');
-    links.innerHTML = 'Links';
+    links.innerHTML = 'Contact';
     nav.appendChild(links);
 
     var br = document.createElement('br');
