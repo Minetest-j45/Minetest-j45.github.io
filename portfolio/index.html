@@ -44,29 +44,15 @@
             flex-direction: column;
         }
 
-        .row {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            position: relative;
-
-            overflow: hidden;
-            animation: marquee 10s linear infinite;
-            width: 200%;
-        }
-
-        @keyframes marquee{
-            from { 
-                left: -100%; 
-            }
-            to {
-                left: 0; 
-            }
-        }
-
         .row span {
             display: flex;
             justify-content: center;
+            justify-content: center;
+
+
+            float: left;
+            width: 50%;
+			justify-content: center;
 
 
             float: left;
@@ -75,20 +61,15 @@
 
         .pject {
             position: relative;
-            margin: 1vw;
+            margin: 20px;
             min-width: 240px;
-            height: 240px;
+			aspect-ratio: 1;
             border-radius: 5%;
-            float: left;
             transition: all .2s ease-out;
             cursor: pointer;
             overflow: hidden;
             background-size: cover;
             content: '';
-        }
-
-        .row:hover {
-            animation-play-state: paused;
         }
         
         .pject .info {

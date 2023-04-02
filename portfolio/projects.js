@@ -12,10 +12,9 @@ async function CreatePortfolio() {
 
 	document.getElementById("portfolio").replaceChildren();
 
-
 	var portfolio = document.getElementById("portfolio");
     //determine the number of items from portfolio that would fit in one row
-    var itemsPerRow = Math.max(Math.ceil((portfolio.offsetWidth-480) / 240), 0)+1;
+    var itemsPerRow = Math.max(Math.ceil((portfolio.offsetWidth-(260*3)) / 260), 0)+1;
 
     //get the number of rows needed
     var rows = Math.ceil(projects.length / itemsPerRow);
@@ -61,40 +60,6 @@ async function CreatePortfolio() {
         }
         row.appendChild(span1);
 
-        var span2 = document.createElement("span");
-
-        pIndex = pIndexBefore;
-        for (var j = 0; j < itemsPerRow; j++) {
-            if (pIndex >= projects.length) {
-                break;
-            }
-
-            var pject = document.createElement("a");
-            pject.className = "pject";
-
-            pject.href = projects[pIndex].split("|")[1]
-            pject.style = "background-image: url('" + projects[pIndex].split("|")[2] + "');";
-
-            var info = document.createElement("div");
-	        info.className = "info";
-
-            var spen = document.createElement("spen");
-	        spen.innerHTML = projects[pIndex].split("|")[0];
-
-            var p = document.createElement("p");
-	        p.innerHTML = projects[pIndex].split("|")[3];;
-
-	        info.appendChild(spen);
-	        info.appendChild(p);
-
-	        pject.appendChild(info)
-
-            pIndex++;
-            span2.appendChild(pject);
-        }
-        row.appendChild(span2);
-
         portfolio.appendChild(row);
     }
-
 };
