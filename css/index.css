@@ -28,7 +28,7 @@ body {
     margin-top: 1vh;
 }
 
-#nav img {
+#nav a img {
     margin: 2%;
     margin-right: auto;
     image-rendering: pixelated;
