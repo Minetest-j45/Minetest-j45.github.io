@@ -1,3 +1,6 @@
+---
+title: 404 - Page Not Found
+---
 <!DOCTYPE html>
 <html>
 
@@ -11,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="j45's website">
 
-    <title>j45's website</title>
+    <title>{{ page.title }}</title>
     <style>
         verybigtext {
             font-size: 40px;
@@ -63,8 +66,7 @@
         <bigtext>You are lost<br><br>
             <a href="https://j1233.minetest.land/" class="myButton">Go home</a></bigtext>
         <br>
+		{% include footer.html %}
     </center>
-    <script src='https://j1233.minetest.land/footer.js'></script>
 </body>
-
 </html>
