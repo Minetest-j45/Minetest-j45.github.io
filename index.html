@@ -1,6 +1,8 @@
+---
+title: j45's website
+---
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
 
@@ -8,16 +10,16 @@
     <link rel="icon" href="https://j1233.minetest.land/images/j45.png" type="image/x-icon">
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="j45's Website" />
+    <meta name="description" content="j45's website" />
     <meta name="keywords" content="j45, j1233, minetest, open source, lua, golang, go" />
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://j1233.minetest.land/" />
-    <meta property="og:title" content="j45's Website" />
+    <meta property="og:title" content="j45's website" />
     <meta name="og:description" content="Hi, I'm j45(he/him). I am 16 years old and I live in England; in my free time, I like to program, play video games or hang out with friends." />
     <meta name="og:image" content="https://j1233.minetest.land/images/bigj45.png" />
 
-    <title>j45's Website</title>
+    <title>{{ page.title }}</title>
 
     <style type="text/css">
         vbt {
@@ -83,8 +85,8 @@
         <vbt>Hey, I'm j45 <span class="wave ">👋</span></vbt>
         <br><br>
         <p id="bigtext">Hi, I'm j45(he/him). I am 16 years old and I live in England; in my free time, I like to program, play video games or hang out with friends.</p>
-    </center>
+		{% include footer.html %}
+	</center>
     <script src='https://j1233.minetest.land/nav.js'></script>
-    <script src='https://j1233.minetest.land/footer.js'></script>
 </body>
 </html>
