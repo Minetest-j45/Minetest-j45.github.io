@@ -29,8 +29,6 @@ body {
 }
 
 #nav a img {
-    margin: 2%;
-    margin-right: auto;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
 }
