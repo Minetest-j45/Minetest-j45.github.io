@@ -19,7 +19,7 @@ body {
 #nav {
     background-color: #303030;
     width: 95%;
-    height: 35vmin;
+    height: 25vmin;
     display: flex;
     padding: 1%;
     flex-wrap: nowrap;
@@ -30,7 +30,7 @@ body {
 
 #nav a img {
     image-rendering: crisp-edges;
-	width: 25vmin;
+	width: 15vmin;
 	aspect-ratio: 1;
 }
 
