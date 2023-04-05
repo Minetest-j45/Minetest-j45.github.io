@@ -19,7 +19,7 @@ body {
 #nav {
     background-color: #303030;
     width: 95%;
-    height: 25vmin;
+    height: 20vmin;
     display: flex;
     padding: 1%;
     flex-wrap: nowrap;
