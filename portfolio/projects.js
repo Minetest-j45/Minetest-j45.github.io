@@ -37,9 +37,11 @@ async function CreatePortfolio() {
 
             var pject = document.createElement("a");
             pject.className = "pject";
+            pject.href = projects[pIndex].split("|")[1];
 
-            pject.href = projects[pIndex].split("|")[1]
-            pject.style = "background-image: url('" + projects[pIndex].split("|")[2] + "');";
+			var image = document.createElement("img");
+			image.src = projects[pIndex].split("|")[2];
+			pject.append(image);
 
             var info = document.createElement("div");
 	        info.className = "info";
@@ -48,12 +50,12 @@ async function CreatePortfolio() {
 	        spen.innerHTML = projects[pIndex].split("|")[0];
 
             var p = document.createElement("p");
-	        p.innerHTML = projects[pIndex].split("|")[3];;
+	        p.innerHTML = projects[pIndex].split("|")[3];
 
 	        info.appendChild(spen);
 	        info.appendChild(p);
 
-	        pject.appendChild(info)
+	        pject.appendChild(info);
 
             pIndex++;
             span1.appendChild(pject);

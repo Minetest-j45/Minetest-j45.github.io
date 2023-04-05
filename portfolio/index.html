@@ -62,8 +62,15 @@ title: j45's Portfolio
             transition: all .2s ease-out;
             cursor: pointer;
             overflow: hidden;
-            background-size: cover;
         }
+
+		.pject img {
+			position: absolute;
+			left: 0%;
+			image-rendering: pixelated;
+			width: 100%;
+			aspect-ratio: 1;
+		}
         
         .pject .info {
             transition: all 150ms ease 0s;
@@ -122,7 +129,7 @@ title: j45's Portfolio
         </div>
 		{% include footer.html %}
     </center>
-    <script src='https://j1233.minetest.land/portfolio/projects.js'></script>
+    <script src='./projects.js'></script>
     <script src='https://j1233.minetest.land/blob.js'></script>
 </body>
 </html>
