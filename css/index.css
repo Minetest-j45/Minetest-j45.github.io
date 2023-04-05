@@ -19,7 +19,7 @@ body {
 #nav {
     background-color: #303030;
     width: 95%;
-    height: max(20vh, 115px);
+    height: 35vmin;
     display: flex;
     padding: 1%;
     flex-wrap: nowrap;
@@ -29,8 +29,14 @@ body {
 }
 
 #nav a img {
-    image-rendering: pixelated;
     image-rendering: crisp-edges;
+	width: 25vmin;
+	aspect-ratio: 1;
+}
+
+#nav #logo {
+	margin: 2%;
+	margin-right: auto;
 }
 
 .nav-link {
