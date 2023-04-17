@@ -41,6 +41,7 @@ async function CreatePortfolio() {
 
 			var image = document.createElement("img");
 			image.src = projects[pIndex].split("|")[2];
+			image.alt = projects[pIndex].split("|")[0];
 			pject.append(image);
 
             var info = document.createElement("div");
