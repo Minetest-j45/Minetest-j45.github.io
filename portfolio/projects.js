@@ -38,11 +38,26 @@ async function CreatePortfolio() {
             var pject = document.createElement("a");
             pject.className = "pject";
             pject.href = projects[pIndex].split("|")[1];
+			
+			var pict = document.createElement("picture");
 
-			var image = document.createElement("img");
-			image.src = projects[pIndex].split("|")[2];
-			image.alt = projects[pIndex].split("|")[0];
-			pject.append(image);
+			var srcwebp = document.createElement("source");
+			srcwebp.type = "image/webp";
+			srcwebp.srcset = "https://j45.dev/images/portfolio/" + projects[pIndex].split("|")[2] + ".webp";
+			pict.append(srcwebp);
+
+			var srcpng = document.createElement("source");
+			srcpng.type = "image/png";
+			srcpng.srcset = "https://j45.dev/images/portfolio/" + projects[pIndex].split("|")[2] + ".png";
+			pict.append(srcpng);
+
+			var img = document.createElement("img");
+			img.src = "https://j45.dev/images/portfolio/" + projects[pIndex].split("|")[2] + ".png";
+			img.alt = projects[pIndex].split("|")[0];
+
+			pict.append(img)
+
+			pject.append(pict);
 
             var info = document.createElement("div");
 	        info.className = "info";
