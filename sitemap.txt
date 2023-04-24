@@ -1,4 +1,4 @@
-https://j45.dev/
-https://j45.dev/blog/
-https://j45.dev/contact/
-https://j45.dev/portfolio/
+https://j45.dev/index.html
+https://j45.dev/blog/index.html
+https://j45.dev/contact/index.html
+https://j45.dev/portfolio/index.html
