@@ -1,0 +1,111 @@
+---
+title: j45's Contact Information
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://j45.dev/css/index.css">
+    <link rel="icon" href="https://j45.dev/images/j45.png" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="j45's portfolio" />
+    <meta name="keywords" content="j45, j1233, minetest, open source, lua, golang, go" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://j45.dev/" />
+    <meta property="og:title" content="j45's Contact Information" />
+    <meta name="og:description" content="Hi, I'm j45(he/him). I am 17 years old and I live in England; in my free time, I like to program, play video games or hang out with friends." />
+    <meta name="og:image" content="https://j45.dev/images/bigj45.png" />
+
+    <script src="https://kit.fontawesome.com/2efcb1dd04.js" crossorigin="anonymous" defer></script>
+
+    <title>{{ page.title }}</title>
+
+    <style type="text/css">
+        body {
+            background: #232323;
+        }
+
+        .card {
+            background-color: transparent;
+            max-height: 65vh;
+			      max-width: 85vw;
+            aspect-ratio: 1.75;
+            perspective: 1000px;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        .card {
+            background: linear-gradient(to bottom right, #cc0099 1%, #9999ff 100%);
+            transform: rotateY(-180deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        linkbtn {
+            background-color: none;
+            padding: 1vw;
+            padding-left: 8%;
+            padding-right: 8%;
+
+            font-size: 3vmin;
+        }
+
+        linkbtn:hover {
+            transform: scale(1.15);
+        }
+
+        linkbtn a {
+            text-decoration: none;
+        }
+
+        linkbtn i {
+            color: #333;
+        }
+
+        linkbtn info {
+            color: #333;
+            user-select: none;
+        }
+
+        linkbtn fprint {
+            font-size: 2vmin;
+        }
+    </style>
+</head>
+
+<div id="blur"></div>
+<div id="blob"></div>
+<body>
+    <center>
+		{% include nav.html %}
+        <noscript>Please enable JavaScript for full functionality</noscript>
+        <br>
+        <div class="card">
+            <div class="card-inner">
+                    <linkbtn><a href="https://github.com/Minetest-j45/" title="GitHub " rel="me"><i class="fa-brands fa-github"></i><info> GitHub: Minetest-j45</info></a></linkbtn>
+                    <linkbtn><a href="https://j45.dev/" title="Website " rel="me"><i class="fa-solid fa-globe"></i><info> Website: /</info></a></linkbtn>
+                    <linkbtn><a href="https://j45.dev/contact/discord.html" title="Discord " rel="me"><i class="fa-brands fa-discord"></i><info> Discord: j45#7171</info></a></linkbtn>
+					          <linkbtn><a href="https://j45.dev/blog/" title="Blog " rel="me"><i class="fa-solid fa-rss"></i><info> Blog: /blog/</info></a></linkbtn>
+                    <linkbtn><a href="mailto:j45@j45.dev" title="Email " rel="me"><i class="fa-solid fa-envelope"></i><info> Email: j45@j45.dev</info></a></linkbtn>
+                    <linkbtn><a href="https://matrix.to/#/@j1233:matrix.org" title="Matrix " rel="me"><info>[m] Matrix: @j1233:matrix.org</info></a></linkbtn>
+                    <linkbtn><a href="https://j45.dev/public_key.txt" title="Public Key " rel="me"><i class="fa-solid fa-lock"></i><info> Public key: <fprint>034D 44DA 5DB6 A0EF 681A  56AC E353 C46B 7EE1 488C</fprint></info></a></linkbtn>
+            </div>
+        </div>
+        <br>
+		{% include footer.html %}
+    </center>
+    <script src='https://j45.dev/blob.js'></script>
+</body>
+</html>
