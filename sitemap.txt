@@ -1,4 +1,3 @@
-https://j45.dev/index.html
 https://j45.dev/blog/index.html
 https://j45.dev/contact/index.html
 https://j45.dev/portfolio/index.html
