@@ -72,3 +72,24 @@ body {
     backdrop-filter: blur(16rem);
     z-index: -1;
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    flex: 1;
+}
+
+.footer {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #303030;
+    text-align: center;
+    padding: 10px 0;
+}
