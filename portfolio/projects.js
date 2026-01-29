@@ -4,7 +4,7 @@ async function CreatePortfolio() {
     var wrapper = document.getElementById("portfolio");
     wrapper.innerHTML = "";
     
-    const Projects = await fetch("https://j45.dev/portfolio/projects.csv");
+    const Projects = await fetch("https://minetest-j45.github.io/portfolio/projects.csv");
 	const data = await Projects.text();
 
 	const projects = data.split("\n").slice(0);
@@ -43,16 +43,16 @@ async function CreatePortfolio() {
 
 			var srcwebp = document.createElement("source");
 			srcwebp.type = "image/webp";
-			srcwebp.srcset = "https://j45.dev/images/portfolio/" + projects[pIndex].split("|")[2] + ".webp";
+			srcwebp.srcset = "https://minetest-j45.github.io/images/portfolio/" + projects[pIndex].split("|")[2] + ".webp";
 			pict.append(srcwebp);
 
 			var srcpng = document.createElement("source");
 			srcpng.type = "image/png";
-			srcpng.srcset = "https://j45.dev/images/portfolio/" + projects[pIndex].split("|")[2] + ".png";
+			srcpng.srcset = "https://minetest-j45.github.io/images/portfolio/" + projects[pIndex].split("|")[2] + ".png";
 			pict.append(srcpng);
 
 			var img = document.createElement("img");
-			img.src = "https://j45.dev/images/portfolio/" + projects[pIndex].split("|")[2] + ".png";
+			img.src = "https://minetest-j45.github.io/images/portfolio/" + projects[pIndex].split("|")[2] + ".png";
 			img.alt = projects[pIndex].split("|")[0];
 
 			pict.append(img)
